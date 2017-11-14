@@ -1,0 +1,104 @@
+@keyframes skyColor {
+    0% {
+        background-color: #2c3e50;
+    }
+    10% {
+        background-color: lightcoral;
+    }
+    20% {
+        background-color: skyblue;
+    }
+    50% {
+        background-color: deepskyblue;
+    }
+    80% {
+        background-color: skyblue;
+    }
+    90% {
+        background-color: lightcoral;
+    }
+    100% {
+        background-color: #2c3e50;
+    }
+}
+
+@keyframes moveSun {
+    0% {
+        left: 0px;
+        top: 80px;
+        background-color: indianred;
+    }
+    10% {
+        left: 10%;
+        top: 25px;
+    }
+    20% {
+        left: 20%;
+        top: 10px;
+        background-color: #f1c40f;
+    }
+    50% {
+        left: 50%;
+        top: 0px;
+        background-color: #f1c40f;
+    }
+    80% {
+        left: 80%;
+        top: 10px;
+        background-color: #f1c40f;
+    }
+    90% {
+        left: 90%;
+        top: 25px;
+    }
+    100% {
+        left: 100%;
+        top: 80px;
+        background-color: red;
+    }
+}
+
+@keyframes grassReflection {
+    0% {
+        background-color: seagreen;
+    }
+    20% {
+        background-color: green;
+    }
+    80% {
+        background-color: green;
+    }
+    100% {
+        background-color: seagreen;
+    }
+}
+
+body {
+    margin: 0 0 0 0;
+    background-color: #2c3e50;
+    animation-name: skyColor;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.grass {
+    background: green;
+    height: 600px;
+    width: 100%;
+    position: absolute;
+    animation-name: grassReflection;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.sun {
+    background: #f1c40f;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    border-radius: 50%;
+    animation-name: moveSun;
+    animation-duration: 10s;
+}
